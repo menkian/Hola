@@ -1,0 +1,74 @@
+.titulo, td{
+	text-align: center;
+}
+
+.imagen_busto, .imagen_ilustrativa{
+	width: 200px;
+	display: block;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.parrafo, ul, table{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.video{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+li{
+	font-size: 25px;
+	list-style-type: square;
+}
+
+table, th, td{
+	border: 1px solid gray;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+th {
+	height: 50px;
+	background-color: royalblue;
+}
+
+
+
+.ulMenuHorizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color: #333;
+	width: 100%;
+
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.liMenuHorizontal {
+	float: left;
+	list-style-type: none;
+}
+
+.liMenuHorizontal a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.liMenuHorizontal a:hover {
+    background-color: #111;
+}
