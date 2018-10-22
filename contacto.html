@@ -23,7 +23,7 @@
 		<form>
       <br>
       <br>
-      <form method="post" action="#" id="formulario"><fieldset>
+      <form method="post" action="#" id="formulario" onsubmit="return confirmSubmit()"><fieldset>
         <legend>Contáctenos</legend>
 
         <label for="nombre"><p>Nombre:</p>
@@ -41,9 +41,9 @@
         <label for="comentarios"><p>Comentarios:</p>
         <textarea rows="4" cols="50" name="comentarios" tabindex="5" accesskey="c" id="comentarios"></textarea><br>
 
-        <input name="Enviar" value="Enviar" tabindex="5" accesskey="e" type="submit">
+        <input name="Enviar" value="Enviar" tabindex="5" accesskey="e" type="submit" onclick="return confirmSubmit()">
         <p></p></fieldset><br>
-        </form>
+      </form>
 
 </body>
 
