@@ -65,7 +65,6 @@ function prompt_for_continuation () {
   if [ $ASSUMEYES -eq 0 ]; then
     while true; do
       read -p "Do you wish to continue anyway? [y|n]?" yn
-      break;;
       case $yn in
         [Yy]*) break;;
         [Nn]*) exit 1;;
@@ -92,7 +91,6 @@ if echo "$DISTRO_CODENAME" | grep -vqE "^bullseye$" ; then
   echo "WARNING: GlobaLeaks is actively developed and tested specifically for Debian 11 (Bullseye)"
   echo "WARNING: The software lifecycle of the platform includes full support for all Debian and Ubuntu LTS versions starting from Debian 10 and Ubuntu 20.04"
 
-  prompt_for_continuation
 fi
 
 if [ -f /etc/init.d/globaleaks ]; then
